@@ -42,7 +42,7 @@
 				<div class="collapse navbar-collapse" id="navigator">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#stuff">Stuff</a></li>
+						<li><a href="#stuff">Testimonials</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
@@ -85,6 +85,14 @@
 			<div class="form-group">
 			  <label for="conf">Feedback:</label>
 			  <textarea class="form-control" rows="5" id="conf" name="conf"></textarea>
+			</div>
+			<div class="form-group">
+				<label class="radio-inline">
+					<input type="radio" name="optradio" value="g">Good
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="optradio" value="b">Bad
+				</label>
 			</div>
 			<button type="submit" class="btn-lg btn-success" >Submit</button>
 		  </form>
@@ -159,15 +167,41 @@ for(i=0;;i++)
 document.location = 'http://www.gsp.ro'
 &lt;&#47;script&gt;</code></li>
 								</ul>
-								<div class="alert alert-danger alert-dismissable">
+								<div class="alert alert-warning alert-dismissable">
   									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  									This XSS attack is potentially dangerous to test.
+  									This XSS attack is annoying.
   								</div>								
 							</div>
 						</div><!-- End Panel collapse -->						
 					</div>
 				</div>
 			</div>
+
+			<div class="panel-group" id="accordion4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#collapse-4" data-toggle="collapse" data-parent="#accordion4">
+								+ Hint 4
+							</a>
+						</div><!-- End panel title -->
+
+						<div id="collapse-4" class="panel-collapse collapse">
+							<div class="panel-body">
+								<ul class="list-group">
+									<li class="list-group-item "><code>&lt;script&gt;
+document.location = 'evil.php'
+&lt;&#47;script&gt;</code></li>
+								</ul>
+								<div class="alert alert-danger alert-dismissable">
+  									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  									This XSS attack is dangerous. *IF EPILEPTIC, DO NOT TRY IT!*
+  								</div>								
+							</div>
+						</div><!-- End Panel collapse -->						
+					</div>
+				</div>
+			</div>			
 		</div>
 	</body>
 </html>
