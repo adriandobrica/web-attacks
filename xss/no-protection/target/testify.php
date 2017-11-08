@@ -6,4 +6,6 @@
 		Your email address is: <?php echo $_POST["email"]; ?>.<br>
 		Your message is: <?php echo $_POST["conf"]; ?>
 	</body>
+
+	<p id="par">Stuff.</p>
 </html>
