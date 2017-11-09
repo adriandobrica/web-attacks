@@ -1,1 +1,0 @@
-<script>alert('This is an innofensive alert')</script>
